@@ -261,3 +261,4 @@ https://wtfkurse.de/installpycharm
 Die Anmeldung als Studierender erfolgt über die Webseite von JetBrains. Dafür ist die Verwendung der E-Mail-Adresse der TU Dresden _(@mailbox.tu-dresden.de)_ notwendig.
 
 https://jetbrains.com/student
+
