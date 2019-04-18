@@ -231,6 +231,11 @@ oder
 ```python
 'Dies ist ein {wort} Satz mit {number} Worten.'.format(wort = 'Satz', number = 8)
 ```
+Die beste Methode (also den Zen of python am besten einhaltende) ist die der F-Strings.
+```python
+stringtype = "F-String"
+f"Dies ist ein {stringtype}! Super lesbar, oder?"
+```
 
 ### JetBrains  als IDE
 
