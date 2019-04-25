@@ -267,3 +267,104 @@ Die Anmeldung als Studierender erfolgt über die Webseite von JetBrains. Dafür 
 
 https://jetbrains.com/student
 
+### Kontrollstrukturen
+
+Bis zum aktuellen Stand waren die bisher erstellten Programm in ihrer Ablauffolge sehr simpel. Es handelte sich bei den Programmen ausschließlich um Sequenzen von Anweisungen, die nach und nach ausgeführt wurden. Im Prinzip handelte es sich um das EVA-Prinzip.
+
+In vielen Fällen lässt sich die lineare Programmstruktur nicht anwenden, da Anweisungen in eine Abhängigkeit gesetzt werden müssen. Realisiert wird dieser Programmablauf durch Auswahlstrukturen.
+
+
+#### Einstufige Auswahl
+
+**Bedingung mit einem positiven Zweig**
+
+```python
+if Bedingung:
+    <Anweisung für ja>
+```
+
+#### Zweistufige Auswahl
+
+**Bedingung mit einem positiven und negativen Zweig**
+
+```python
+if Bedingung:
+    <Anweisung für ja>
+else:
+    <Anweisung für nein>
+```
+
+#### Mehrstufige Auswahl
+
+**Bedingung mit einem positiven und geschachtelten negativen Zweig**
+
+```python
+if Bedingung:
+    <Anweisung für ja>
+elif Bedinung:
+    <Anweisung für ja>
+elif Bedinung:
+    <Anweisung für ja>
+elif Bedinung:
+    <Anweisung für ja>
+else:
+    <Anweisung für nein>
+```
+
+### Zyklische Strukturen (Schleifen)
+
+Wird eine Anweisung **mehrmals nacheinander** ausgeführt, so handelt es sich um eine zyklische Wiederholung.
+
+| Typ                | Definition                                                                                                                					 |
+|--------------------|-------------------------------------------------------------------------------------------------------------------------------------|
+| Feste Schleife     | Besitzen eine festgelegte Anzahl von Schleifendurchläufen.                                                                					 |
+| Bedingte Schleifen | Iterieren so lange, bis eine getestete Bedingung wahr wird. Der Test kann am Anfang und Ende der Schleife sein.           					 |
+| Endlose Schleife   | Iterieren unendlich lang, bis ein bestimmter Mechanismus sie beendet (Warten auf Eingabe)<br/>Tastenkombination: ```Strg + Pause``` |
+
+
+#### Merkmale
+
+Bevor eine Schleife ausgelöst wird, muss ein Großteil der Variablen auf einem Anfangswert gesetzt werden.
+
+Diesen **Anfangswert (Vorbedingung)** kann man durch Abfrage von Eingangswerten erhalten oder durch Festlegen von Anfangswerten, die sich später innerhalb der Schleife verändern.
+
+
+#### for-Schleife
+
+- Es werden die Anzahl der Wiederholungen in einem Zähler festgehalten und bei Erreichen des Zählerendstandes eingestellt.
+- Anweisungen werden mindestens einmal ausgeführt, bis zum Erreichen des Endstartes (So lange, bis die Bedingung wahr geworden ist)
+
+
+```python
+for i in range (1, 5) :
+    Anweisung1;
+    Anweisung2;
+    Anweisungn;
+
+```
+
+**Was heißt das?**
+
+| Code            | Erklärung                                            |
+|-----------------|------------------------------------------------------|
+| ```for i```  	  | Schleifenzähler                                      |
+| ```1```   			| Schleife beginnt bei i = 1, Anfangswert ist 1        |
+| ```5``` 				| Schleife wird solange ausgeführt, bis i = 5          |
+
+
+#### while-Schleife
+
+- Bedingung ist oft ein integer-Ausdruck
+-	Separater Schleifenzähler erforderlich
+-	Startwert muss außerhalb davor deklariert werden
+
+
+```python
+x = 2;
+
+while (x < 15):
+	Anweisung1;
+	Anweisung2;
+	Anweisungn;
+```
+
