@@ -368,6 +368,41 @@ while (x < 15):
 	Anweisungn;
 ```
 
+### Datenstrukturen
+
+#### Listen
+- enthält variable anzahl von Objekten
+- kann beliebig viele verschiedene Datentypen enthalten
+- können in einander verschachtelt werden
+- kann als Queue oder Stack verwendet werden
+- abfrage erfolgt über Eckigeklammern
+
+```python
+# Liste mit verschiedenen Datentypen (Integer, String, Float)
+datum = [13, 'März', 13.00]
+
+# Abfrage des ersten Elementes
+tag = datum[0]
+
+# Abfrage des letzten Elementes
+uhrzeit = datum[-1]
+
+# Liste mit drei Integer Werten
+stack = [3,4,5]
+
+# Element am Ende der Liste anfügen
+stack.append(6)
+
+# Letze Element der Liste entfernen
+stack.pop()
+
+# Element an der zweiten Stelle wird ausgetauscht
+datum[1] = 'April'
+
+```
+
+###
+
 #### Dictionary
 
 - zuweisendes Array
