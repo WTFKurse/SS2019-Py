@@ -368,3 +368,64 @@ while (x < 15):
 	Anweisungn;
 ```
 
+#### Dictionary
+
+- zuweisendes Array
+- jedem Schlüssel wird genau eine Wert zugewiesen
+- sowohl Schlüssel als auch Wert können von beliebigem Datentyp seine
+
+```python
+# Beispiel 1 mit String String zuweisung
+dictonary = {
+		'Schlüssel1' : 'Wert1',
+		'Schlüssel2' : 'Wert2',
+		'Schlüssel3' : 'Wert3'
+}
+
+# Beispiel 3 mit Integre String zuweisung
+dictonary2 = {
+	1 : 'Wert1',
+	2 : 'Wert2',
+	3 : 'Wert3'
+}
+```
+
+- der zugriff erfolgt über Eckigeklammern
+
+```python
+wert = dictonary2[2]
+# wert hat jetzt den wert 'Wert2' gespeichert
+```
+
+
+#### switch-Operation
+Da das Switch Statement in Python nicht nativ implementiert ist, benutzt man hierfür einen Trick. Die Einzelnen Fälle werden als Keys in einem Dictonary gespeichert, die entsprechenden Werte dazu sind Namen von Funktionen. In den Funktionen werden die Anweisungen definiert. Damit die Funktion aufgerufen wird, muss dem Dictonary noch ein Klammernpaar nachgestellt werden.
+
+- nicht nativ in Python implementiert
+- realisierung mit Dictionary
+- Auswahlmöglichkeiten sind Keys
+- Werte sind Funktionsnamen welche Anweisungen definieren
+- Zugriff mit Eckigenklammern und nachgestellten Rundenklammern
+
+```python
+# In einer Variable wird der entsprechende Fall gespeichert
+case = 'Fall1'
+
+switch{
+'Fall1' : fall1,
+'Fall2' : fall2,
+'Fall3' : fall3
+}
+
+switch[case]()
+
+
+def fall1():
+	print("Fall 1 wurde erreicht")
+
+def fall2():
+	print("Fall 2 wurde erreicht")
+
+def fall3():
+	print("Fall 3 wurde erreicht")
+```
