@@ -267,6 +267,87 @@ Die Anmeldung als Studierender erfolgt über die Webseite von JetBrains. Dafür 
 
 https://jetbrains.com/student
 
+### Datenstrukturen
+- können aus verschiedenen Datentypen bestehen
+- beliebige Länge
+- können in einander verschachtelt werden
+- abfrage erfolgt über Eckigeklammern
+
+#### Listen
+- veränderbar
+- kann als Queue oder Stack verwendet werden
+
+```python
+# Liste mit verschiedenen Datentypen (Integer, String, Float)
+datum = [13, 'März', 13.00]
+
+# Abfrage des ersten Elementes
+tag = datum[0]
+
+# Abfrage des letzten Elementes
+uhrzeit = datum[-1]
+
+# Liste mit drei Integer Werten
+stack = [3,4,5]
+
+# Element am Ende der Liste anfügen
+stack.append(6)
+
+# Letze Element der Liste entfernen
+stack.pop()
+
+# Element an der zweiten Stelle wird ausgetauscht
+datum[1] = 'April'
+
+```
+
+#### Tupel
+- unveränderbar
+
+```python
+# Tupel mit verschiedenen Datentypen (Integer, String, Float)
+datum = (13, 'März', 13.00)
+
+# Abfrage des ersten Elementes
+tag = datum[0]
+
+# Abfrage des letzten Elementes
+uhrzeit = datum[-1]
+
+```
+
+
+
+#### Dictionary
+
+- zuweisendes Array
+- jedem Schlüssel wird genau eine Wert zugewiesen
+- sowohl Schlüssel als auch Wert können von beliebigem Datentyp seine
+
+```python
+# Beispiel 1 mit String String zuweisung
+dictonary = {
+		'Schlüssel1' : 'Wert1',
+		'Schlüssel2' : 'Wert2',
+		'Schlüssel3' : 'Wert3'
+}
+
+# Beispiel 3 mit Integre String zuweisung
+dictonary2 = {
+	1 : 'Wert1',
+	2 : 'Wert2',
+	3 : 'Wert3'
+}
+```
+
+- der zugriff erfolgt über Eckigeklammern
+
+```python
+wert = dictonary2[2]
+# wert hat jetzt den wert 'Wert2' gespeichert
+```
+
+
 ### Kontrollstrukturen
 
 Bis zum aktuellen Stand waren die bisher erstellten Programm in ihrer Ablauffolge sehr simpel. Es handelte sich bei den Programmen ausschließlich um Sequenzen von Anweisungen, die nach und nach ausgeführt wurden. Im Prinzip handelte es sich um das EVA-Prinzip.
@@ -367,87 +448,6 @@ while (x < 15):
 	Anweisung2;
 	Anweisungn;
 ```
-
-### Datenstrukturen
-- können aus verschiedenen Datentypen bestehen
-- beliebige Länge
-- können in einander verschachtelt werden
-- abfrage erfolgt über Eckigeklammern
-
-#### Listen
-- veränderbar
-- kann als Queue oder Stack verwendet werden
-
-```python
-# Liste mit verschiedenen Datentypen (Integer, String, Float)
-datum = [13, 'März', 13.00]
-
-# Abfrage des ersten Elementes
-tag = datum[0]
-
-# Abfrage des letzten Elementes
-uhrzeit = datum[-1]
-
-# Liste mit drei Integer Werten
-stack = [3,4,5]
-
-# Element am Ende der Liste anfügen
-stack.append(6)
-
-# Letze Element der Liste entfernen
-stack.pop()
-
-# Element an der zweiten Stelle wird ausgetauscht
-datum[1] = 'April'
-
-```
-
-#### Tupel
-- unveränderbar
-
-```python
-# Tupel mit verschiedenen Datentypen (Integer, String, Float)
-datum = (13, 'März', 13.00)
-
-# Abfrage des ersten Elementes
-tag = datum[0]
-
-# Abfrage des letzten Elementes
-uhrzeit = datum[-1]
-
-```
-
-
-
-#### Dictionary
-
-- zuweisendes Array
-- jedem Schlüssel wird genau eine Wert zugewiesen
-- sowohl Schlüssel als auch Wert können von beliebigem Datentyp seine
-
-```python
-# Beispiel 1 mit String String zuweisung
-dictonary = {
-		'Schlüssel1' : 'Wert1',
-		'Schlüssel2' : 'Wert2',
-		'Schlüssel3' : 'Wert3'
-}
-
-# Beispiel 3 mit Integre String zuweisung
-dictonary2 = {
-	1 : 'Wert1',
-	2 : 'Wert2',
-	3 : 'Wert3'
-}
-```
-
-- der zugriff erfolgt über Eckigeklammern
-
-```python
-wert = dictonary2[2]
-# wert hat jetzt den wert 'Wert2' gespeichert
-```
-
 
 #### switch-Operation
 Da das Switch Statement in Python nicht nativ implementiert ist, benutzt man hierfür einen Trick. Die Einzelnen Fälle werden als Keys in einem Dictonary gespeichert, die entsprechenden Werte dazu sind Namen von Funktionen. In den Funktionen werden die Anweisungen definiert. Damit die Funktion aufgerufen wird, muss dem Dictonary noch ein Klammernpaar nachgestellt werden.
