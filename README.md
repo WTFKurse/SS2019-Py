@@ -480,3 +480,37 @@ def fall2():
 def fall3():
 	print("Fall 3 wurde erreicht")
 ```
+
+## OOP - Objekt Orientierte Programmierung
+### Grundprinzip
+Die OOP beschreibt das Prinzip der Programmierung in Klassen und Objekten mit Vererbung und Polymorphie. Ein Objekt soll dabei ein Abbild der Realen Welt darstellen.
+### Klassen
+Eine Klasse stellt die Schablone für ein Objekt dar. In den Klassen werden alle Attribute (Eigenschaften) sowie Methoden (Funktionen) definiert, die ein später darauß erzeugtes Objekt haben soll.
+Das Schlüsselwort ``` self ``` setht immer selbstrefernziell für die das Objekt in welchem es aufgerufen wird. Es grefit nicht auf die Klasse zurück sondern auf das konkrete Objekt (im Abschnit [Objekt](#switch-Operation) mit Beispiel)
+
+Eine Klasse wird in Python wie folgt definiert:
+```python
+class Obst:
+	self.farbe = "rot"
+	self.anzahl_kerne = 1
+	self.calorien = 200000
+
+	def getFarbe(self):
+		return self.farbe
+
+	def set.farbe(self, farbe):
+		self.farbe = farbe
+```
+
+Jede Klasse wird mit dem Schlüsselwort ```class ``` eingeleitet. Darauf folgt der Name der Klasse.
+
+Jede Klasse kann beliebig viele Attribute haben. Definiert werden sie mit dem Schlüsselwort ``` self```, einem Punkt und dem Namen welches das Attribut haben sollte. Im folgendem Beispiel erhält die Klasse das Attribut ``` farbe``` welche auf rot gesetzt wird.
+```python
+self.farbe = "rot"
+```
+Klassen können sowohl private wie auch öffentliche Attribute haben. Wenn ein Attribut privat sein soll, von Außerhalb der Klasse bzw. des Objekts soll niemand auf das Attribut zugreifen können, müssen zwei Unterstriche vor das Attribut gesetzt werden.
+```python
+self.__reifegrad = "faulig"
+```
+
+Methoden werden für eine Klasse definiert in dem man eine Funktion innerhalb des Gültigkeitsblock (Einschub nach links) schreibt und dieser als Parameter ``` self``` übergibt.
